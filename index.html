@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>jquery悬浮微信二维码微博分享置顶特效</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#welcome').fadeTo(1000, 1).delay(1000).animate({
+                opacity: 0,
+                marginTop: '-=200'
+            },
+            1000,
+            function () {
+                $('#welcome').hide();
+            });
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $('#jump li:eq(0)').fadeIn(800);
+                } else {
+                    $('#jump li:eq(0)').fadeOut(800);
+                }
+            });
+            $("#top").click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                },
+                1000);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <table style="width: 98%; font-size: 12px; text-align: center; height: 600px; font-family: 'Microsoft YaHei'; margin-bottom: 2000px">
+        <tr>
+            <td>
+                <br />
+                <br />
+                <h1>来自Web乐园：jquery悬浮微信二维码微博分享置顶特效</h1>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.dearboy.cn" target="_blank" style="color: #000">★ 欢迎访问Web乐园官方网站</a><br />
+                <br />
+                <br />
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=b2e88b360c1091bba9b14b06769bb7b8a39dc275ee315cfc3a28e15f982d4870">�� �Ƽ�����Web��԰����QȺ</a><br />
+                <br />
+                <br />
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=b2e88b360c1091bba9b14b06769bb7b8a39dc275ee315cfc3a28e15f982d4870">
+                    <img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Web������԰" title="��˼���Web��԰"></a></td>
+        </tr>
+        <tr>
+            <td><img alt="Web��԰����QȺ��ά��" src="images/QQQ.png" /></td>
+        </tr>
+    </table>
+
+
+
+
+    <div class="top">
+        <ul id="jump">
+            <li style="display: none; height: 50px;"><a id="top" href="#top"></a></li>
+            <li style="height: 50px"><a id="sina" rel="nofollow" href="http://t.qq.com/DEARBOY1988" target="_blank"></a></li>
+            <li style="height: 50px"><a id="weixin" href="javascript:void(0)" onmouseover="showEWM()" onmouseout="hideEWM()">
+                <div id="EWM">
+                    <img src="images/QQQ.png" />
+                </div>
+            </a></li>
+            <li style="height: 50px"><a id="ceping" href="http://dearboy.cn" target="_blank"></a></li>
+            <li style="height: 50px"><a id="reply" href="http://dearboy.cn/Feedback" target="_blank"></a></li>
+            <script>
+                function showEWM() { document.getElementById("EWM").style.display = 'block'; }
+                function hideEWM() { document.getElementById("EWM").style.display = 'none'; }
+            </script>
+        </ul>
+    </div>
+</body>
+</html>

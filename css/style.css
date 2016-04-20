@@ -1,0 +1,26 @@
+body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{ margin: 0; padding: 0; }
+fieldset, img, input { border: 0 none; }
+li { list-style: none; }
+h1, h2, h3, h4, h5, h6 {font-weight: normal; line-height: 1.2; }
+.clear { clear: both; font-size: 0; overflow: hidden; }
+.top { float: left; width: 100%; position: relative; margin-top: 8px; }
+/*�ұ߸���*/
+#jump { position: fixed; top: 200px; left: 50%; margin-left: 510px; width: 40px; z-index: 400; _position: absolute; _top: expression(documentElement.scrollTop + "px"); }
+#top, #share, #reply, #sina, #ceping, #weixin { display: block; width: 40px; height: 42px; cursor: pointer; }
+#top { background: url(../images/top.png) repeat scroll 0% 0% transparent; }
+#share { background: url(../images/share.png) repeat scroll 0% 0% transparent; }
+#reply { background: url(../images/reply.png) repeat scroll 0% 0% transparent; }
+#sina { background: url(../images/sina.png) repeat scroll 0% 0% transparent; }
+#weixin { background: url(../images/weixin.png) repeat scroll 0% 0% transparent; }
+#top:hover { background: url(../images/toped.png) repeat scroll 0% 0% transparent; }
+#share:hover { background: url(../images/shared.png) repeat scroll 0% 0% transparent; }
+#reply:hover { background: url(../images/replyed.png) repeat scroll 0% 0% transparent; }
+#sina:hover { background: url(../images/sinad.png) repeat scroll 0% 0% transparent; }
+#weixin:hover { background: url(../images/weixind.png) repeat scroll 0% 0% transparent; }
+#ceping { background: url(../images/ceping.png) repeat scroll 0% 0% transparent; }
+#ceping:hover { background: url(../images/cepinged.png) repeat scroll 0% 0% transparent; }
+.yjbys_sj { position: absolute; z-index: 9999; top: 150px; display: none; }
+ .yjbys_sj img { border: 1px solid #DDDDDD; }
+#EWM { position: absolute; left: -160px; display: none; }
+    #EWM img { width: 150px; height: 150px; }
+.red { color: red; }
